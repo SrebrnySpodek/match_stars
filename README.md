@@ -5,7 +5,7 @@ find matching stars in rotated and scaled images
 **Dominika Świtlik** 
 
 ### Reguirements:
-*python3, numpy, pickle, os  
+python3, numpy, pickle, os, unittest 
 
 ### Run:
 
@@ -26,5 +26,4 @@ find matching stars in rotated and scaled images
 
 Python3    
 NumPy  
-matplotlib  
 
