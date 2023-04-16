@@ -4,6 +4,7 @@ from match_starts_lib.match_starts import to_file_dict_of_nearest_stars
 from match_starts_lib.match_starts import read_dict_with_nearest_stars
 from match_starts_lib.match_starts import find_match
 
+
 def main():
 
     path_with_stars_file = "./"
