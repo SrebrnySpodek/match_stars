@@ -15,9 +15,9 @@ find matching stars in rotated and scaled images
 #### Basic test
 
 
-<img src="A1.png" alt="drawing" width="250"/>
+<img src="IMG/A1.png" alt="drawing" width="250"/>
 
-<img src="B1.png" alt="drawing" width="250"/>
+<img src="IMG/B1.png" alt="drawing" width="250"/>
 
 
 

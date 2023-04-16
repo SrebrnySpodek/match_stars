@@ -137,3 +137,4 @@ dmypy.json
 focus1/
 focus2/
 focus3/
+*.swp

@@ -74,14 +74,19 @@ def dict_nearest_stars(list_with_stars, name_to_save, how_many_stars=5):
 
 
 def to_file_dict_of_nearest_stars(path_):
+    if os.path.isfile(path_):
+        if path_.endswith(".out"):
+            list_with_stars = read_in_file_with_stars(path_)
+            dict_nearest_stars(list_with_stars, path_.replace(".out", ".nearest_star_dict"))
+            return
     for file in os.listdir(path_):
         if file.endswith(".out"):
             name = os.path.join(path_, file)
             print(name)
             list_with_stars = read_in_file_with_stars(name)
             dict_nearest_stars(list_with_stars, name.replace(".out", ".nearest_star_dict"))
-
-
+            return
+    return
 def read_dict_with_nearest_stars(file_name):
     f = open(file_name, 'rb')
     stars_dict = pickle.load(f)
@@ -110,10 +115,11 @@ def find_match(star, list_with_nearest, dict_for_different_set):
     for _star, _star_nearest_list in dict_for_different_set.items():
         o = check_if_match(list_with_nearest, _star_nearest_list)
         if o:
-            print(star, _star)
-            print("it is a match")
-            print()
-
+            #print(star, _star)
+            #print("it is a match")
+            #print()
+            return star, _star
+    return None
 
 if __name__ == "__main__":
     pass

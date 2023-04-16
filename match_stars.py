@@ -16,10 +16,16 @@ def main():
     list_with_dict = [read_dict_with_nearest_stars(file) for file in list_with_dict_files]
     dict_1 = list_with_dict[0]
     dict_2 = list_with_dict[1]
-
+    #print(list_with_dict_files[0])
+    #print(list_with_dict_files[1])
     # print matched stars inbetween different sets
     for star, list_of_nearest in dict_1.items():
-        find_match(star, list_of_nearest, dict_2)
+        print(find_match(star, list_of_nearest, dict_2))
+        pass
+    print()
+    print()
+
+
 
 
 if __name__ == "__main__":
